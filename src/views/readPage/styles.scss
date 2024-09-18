@@ -1,0 +1,32 @@
+@import "../../global.scss";
+
+.read{
+
+  &__user{
+    border-radius: 16px;
+    background-color: #fafafa;
+    margin-bottom: 20px;
+    padding: 20px;
+    border: solid 1px rgb(240, 240, 240);
+  }
+
+  &__user:hover{
+    cursor: pointer;
+    background-color: #f1f1f1;
+  }
+}
+
+.interactions{
+  max-width: 150px;
+  position: fixed;
+  z-index: 100;
+  top: calc(50vh - 130px);
+  // bottom: 50px;
+  left: calc(50vw + 325px);
+
+  background-color: #fafafa;
+  border-radius: 16px;
+  padding: 15px;
+
+  border: solid 1px rgb(240, 240, 240);
+}

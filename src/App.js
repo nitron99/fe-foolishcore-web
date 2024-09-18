@@ -1,24 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import './App.scss';
+import Router from './router/routes';
+
+import { 
+  ThemeProvider 
+} from '@mui/material';
+
+import { theme } from './theme/MuiTheme';
+
+import { GoogleOAuthProvider } from '@react-oauth/google';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <GoogleOAuthProvider clientId="1087559917363-oa6isa4tlaqcbsb3dnpm5rjb4ehpo66o.apps.googleusercontent.com">
+      <ThemeProvider theme={theme}>
+        <Router />
+      </ThemeProvider>
+    </GoogleOAuthProvider>
   );
 }
 

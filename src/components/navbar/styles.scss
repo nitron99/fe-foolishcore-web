@@ -1,0 +1,18 @@
+@import "../../global.scss";
+
+.navbar{
+  height: 64px;
+  border-bottom: solid 1px rgb(240, 240, 240);
+  // border-bottom: solid 1px $Silly-Yellow;
+  background-color: white;
+
+  position: sticky;
+  top: 0px;
+  z-index: 100;
+
+  transition: all .1s;
+
+  &__logo:hover{
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,21 @@
+@import "../../global.scss";
+
+.footer{
+  // background-color: $Laughing-Lavender;
+  background-color: $Silly-Yellow;
+
+  &__container{
+    padding: 50px 0px;
+  }
+
+  &__links{
+    color: rgb(66, 57, 4);
+    font-weight: 500;
+
+    &:hover{
+      cursor: pointer;
+      text-decoration: underline;
+      color: black;
+    }
+  }
+}
